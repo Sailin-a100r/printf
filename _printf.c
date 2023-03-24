@@ -40,9 +40,11 @@ int _printf(const char *format, ...)
 				i++;
 				continue;
 			}
-			else if (format[i] == 'd')
+			else
 			{
-
+				i++;
+				continue;
+			}
 		}
 		_putchar(format[i]);
 		i++;
