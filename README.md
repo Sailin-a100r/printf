@@ -1,4 +1,4 @@
-# 0x11-printf (Group project)
+## 0x11-printf (Group project)
 
 - 0- Write a function that produces output according to a format
 
@@ -35,3 +35,9 @@
 	R: prints the rot13'ed string
 
 - 15- All the above options work well together.
+
+# Group Contributors
+
+Amr Alnaqib: Sailin-a100r
+
+Nnachi Amah Lofty: amah-nnachi-lofty
