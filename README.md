@@ -38,6 +38,6 @@
 
 # Group Contributors
 
-Amr Alnaqib: Sailin-a100r
+Amr Alnaqib: [@Amr Alnaqib](https://github.com/Sailin-a100r)
 
-Nnachi Amah Lofty: amah-nnachi-lofty
+Nnachi Amah Lofty: [@amah-nnachi-lofty](https://github.com/amah-nnachi-lofty)
