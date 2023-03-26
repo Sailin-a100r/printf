@@ -42,6 +42,10 @@ int _printf(const char *format, ...)
 				i = i + 2;
 				continue;
 			}
+			else
+			{
+				return (-1);
+			}
 		}
 		print_char(format[i]);
 		i++;
