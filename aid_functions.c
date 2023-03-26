@@ -10,7 +10,7 @@
  * Return: 0 Success, -1 otherwise
  */
 
-void print_char(char character)
+int print_char(char character)
 {
 	if (character)
 	{
