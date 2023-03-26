@@ -6,13 +6,14 @@
  *
  * @format: string with format specifiers
  *
- * @Return: 0 Success, -1 otherwise
+ * Return: 0 Success, -1 otherwise
  */
 
 int _printf(const char *format, ...)
 {
 	va_list arguments;
 	int i;
+	char *string, character;
 
 	va_start(arguments, format);
 	i = 0;
@@ -20,23 +21,24 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			i++;
-			if (format[i] == 'c')
+			if (format[i + 1] == 'c')
 			{
-				print_char(va_arg(arguments, int));
-				i++;
+				character = va_arg(arguments, int);
+				if (!character)
+				{
+				print_char(character);
+				i = i + 2;
 				continue;
+				}
 			}
-			else if (format[i] == 's')
+			else if (format[i + 1] == 's')
 			{
-				_printf(va_arg(arguments, char *));
-				i++;
+				string = va_arg(arguments, char *);
+				if (string == NULL)
+					string = "(null)";
+				_printf(string);
+				i = i + 2;
 				continue;
-			}
-			else
-			{
-				_printf("Error\n");
-				return (-1);
 			}
 		}
 		print_char(format[i]);
