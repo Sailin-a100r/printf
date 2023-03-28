@@ -32,7 +32,7 @@ struct fmt
 
 
 /**
-* typedef struct fmt fmt_t - Struct op
+ * typedef struct fmt fmt_t - Struct op
  *
  * @fmt: The format.
  * @fm_t: The function associated.
@@ -84,11 +84,11 @@ int get_width(const char *format, int *i, va_list list);
 int get_precision(const char *format, int *i, va_list list);
 int get_size(const char *format, int *i);
 
-/*Function to print string in reverse*/
+/* Function to print string in reverse */
 int print_reverse(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 
-/*Function to print a string in rot 13*/
+/* Function to print a string in rot 13 */
 int print_rot13string(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 
