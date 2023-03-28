@@ -28,7 +28,7 @@ struct fmt
 {
 	char fmt;
 	int (*fn)(va_list, char[], int, int, int, int);
-};
+}
 
 
 /**
@@ -52,6 +52,7 @@ int print_string(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 int print_percent(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
+
 /* Functions to print numbers */
 int print_int(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
@@ -68,6 +69,7 @@ int print_hexa_upper(va_list types, char buffer[],
 
 int print_hexa(va_list types, char map_to[],
 char buffer[], int flags, char flag_ch, int width, int precision, int size);
+
 /* Function to print non printable characters */
 int print_non_printable(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
@@ -103,6 +105,7 @@ int write_pointer(char buffer[], int ind, int length,
 int write_unsgnd(int is_negative, int ind,
 char buffer[],
 	int flags, int width, int precision, int size);
+
 /****************** UTILS ******************/
 int is_printable(char);
 int append_hexa_code(char, char[], int);
